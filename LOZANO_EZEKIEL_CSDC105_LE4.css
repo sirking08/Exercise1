@@ -1,6 +1,7 @@
 body{
 	font-family: arial;
 	font-size: 11pt;
+	background: #F5F5F5;
 }
 
 div.main{
@@ -8,6 +9,7 @@ div.main{
 	margin: 1% auto;
 	border: 2px solid #D0D0D0;
 	padding: 1%;
+	background: #FFFFFF;
 }
 
 h1{
