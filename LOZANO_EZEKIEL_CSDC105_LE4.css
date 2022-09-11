@@ -10,6 +10,10 @@ div.main{
 	padding: 1%;
 }
 
+h1{
+	text-transform: uppercase;
+}
+
 h1,h2{
 	font-weight: normal;
 }
@@ -44,4 +48,5 @@ a{
 
 p,li{
 	color: #808080;
+	line-height: 1.5;
 }
