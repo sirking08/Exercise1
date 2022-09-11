@@ -1,0 +1,61 @@
+body{
+	font-family: arial;
+	font-size: 11pt;
+	background: #F5F5F5;
+}
+
+div.main{
+	width: 800px;
+	margin: 1% auto;
+	border: 2px solid #D0D0D0;
+	padding: 1%;
+	background: #FFFFFF;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+h1,h2{
+	font-weight: normal;
+}
+
+h2{
+	padding-top: 20px;
+}
+
+img{
+	width: 150px;
+	float: right;
+	border-radius: 10px;
+}
+
+hr{
+	height: 3px;
+	border: none;
+	background-color: black;
+}
+
+span.date{
+	float: right;
+	font-style: italic;
+}
+
+span.institution{
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+p,li{
+	color: #808080;
+	line-height: 1.5;
+}
+
+a:link{color: #1877F2;}
+
+a:visited{color: #1877F2;}
+
+a:hover{color: #0000FF;}
