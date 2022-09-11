@@ -27,6 +27,7 @@ h2{
 img{
 	width: 150px;
 	float: right;
+	border-radius: 10px;
 }
 
 hr{
