@@ -53,3 +53,9 @@ p,li{
 	color: #808080;
 	line-height: 1.5;
 }
+
+a:link{color: #1877F2;}
+
+a:visited{color: #1877F2;}
+
+a:hover{color: #0000FF;}
