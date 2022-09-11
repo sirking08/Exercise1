@@ -1,19 +1,19 @@
 *{
-  text-align: center;
-  margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
 }
 
 div.header{
-  font-size: 2em;
-  height: 200px;
-  background: url("images/caramoan.png") 30%;
+	font-size: 2em;
+	height: 200px;
+	background: url("images/caramoan.png") 30%;
 }
 
 p.intro{
-  font-family: arial;
-  font-size: 18pt;
-  margin-top: 8%;
-  color: grey;
+	font-family: arial;
+	font-size: 18pt;
+	margin-top: 8%;
+	color: grey;
 }
 
 div.content{
@@ -21,18 +21,18 @@ div.content{
 }
 
 div.box{
-  border: 3px dotted black;
-  margin: 3% 4%;
-  padding: 3% 5%;
+	border: 3px dotted black;
+	margin: 3% 4%;
+	padding: 3% 5%;
 }
 
 div.box img{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
 }
 
 div.box p{
-  font-size: 10pt;
-  line-height: 2;
+	font-size: 10pt;
+	line-height: 2;
 }
