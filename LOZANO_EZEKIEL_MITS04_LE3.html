@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Laboratory Exercise #3 - Bootstrap</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+		<!-- JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+		<style>
+			#carouselExampleDark .carousel-item img{
+				object-fit: cover;
+				object-position: center;
+				overflow: hidden;
+				height: 60vh;
+			}
+			
+			#carouselExampleDark .carousel-item:before{
+				content: "";
+				background-image: 
+					linear-gradient(
+						to bottom,
+						transparent, rgba(0,0,0,0.5)
+					);
+				display: block;
+				position: absolute;
+				top: 0;
+				width: 100vw;
+				height: 100vh;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="#">MyPedia Online</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">About Us</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Services Offered
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#">General Pediatric Consultation</a></li>
+					<li><a class="dropdown-item" href="#">Pediatric Pulmonology Consultation</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Vaccination / Immunization</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div id="carouselExampleDark" class="carousel carousel-dark slide h-50" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="10000">
+			  <img src="images/pedia1.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item" data-bs-interval="2000">
+			  <img src="images/pedia2.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+			  <img src="images/pedia3.jpg" class="d-block w-100" alt="...">
+			</div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		<div class="container">
+			<div class="row my-4">
+				<div class="col-sm-4">
+					<div class="card" style="width: 100%;">
+						<img src="images/pediatrics.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">General Pediatric Consultation</h5>
+							<p class="card-text">Clinic and Online Consultation for the general health of babies, children, and teenagers ages 0-18 years old.</p>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generalPedia">
+							  Consult Now
+							</button>
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" style="width: 100%;">
+						<img src="images/pulmonology.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Pediatric Pulmonology Consultation</h5>
+							<p class="card-text">Clinic and Online Consultation for pulmonary diseases of babies, children, and teenagers ages 0-18 years old.</p>
+							<p class="card-text">Treatment of Lungs and Respiratory diseases such as Tuberculosis (TB), Asthma, Allergic Rhinitis, Chronic Cough, Pneumonia, Breathing problems, etc.</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pulmonology">
+							  Consult Now
+							</button>
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" style="width: 100%;">
+						<img src="images/vaccine.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Vaccination / Immunization</h5>
+							<p class="card-text">Complete immunization vaccine shots for babies, children, and teenagers. Including Flu and Pneumonia vaccines.</p>
+							<p class="card-text">Note: Subject to availability. Please contact us in advance.</p>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookNow">
+							  Book Now
+							</button>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Modal - General Pedia -->
+		<div class="modal fade" id="generalPedia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">General Pediatric Consultation</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<div class="mb-3">
+				  <label for="message-text" class="col-form-label">Message:</label>
+				  <textarea class="form-control" id="message-text"></textarea>
+			    </div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Send</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!-- Modal - Pulmonology -->
+		<div class="modal fade" id="pulmonology" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Pediatric Pulmonology Consultation</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<div class="mb-3">
+				  <label for="message-text" class="col-form-label">Message:</label>
+				  <textarea class="form-control" id="message-text"></textarea>
+			    </div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Send</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
+		<!-- Modal - Book now -->
+		<div class="modal fade" id="bookNow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Vaccination / Immunization</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<label for="date">Select a Date:</label>
+				<input type="date" id="bookDate" name="bookDate">
+				<label for="appt">Select a Time:</label>
+				<input type="time" id="bookTime" name="bookTime">
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Send</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</body>
+</html>
